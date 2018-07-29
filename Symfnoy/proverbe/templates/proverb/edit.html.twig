@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Proverb{% endblock %}
+
+{% block body %}
+    <h1>Edit Proverb</h1>
+
+    {{ include('proverb/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('proverb_index') }}">back to list</a>
+
+    {{ include('proverb/_delete_form.html.twig') }}
+{% endblock %}
